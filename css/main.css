@@ -1,0 +1,494 @@
+
+/*css reset*/
+body{
+    font:14px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+}
+body,html{
+  /*  overflow: hidden;
+    position:fixed;*/
+    width: 100%;
+    height: 100%;
+}
+a{
+    color:#666;
+    text-decoration:none;
+}
+a:hover{
+    color:#ff0700;
+    text-decoration:underline;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+
+/****************************************************/
+
+#my-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+@media screen and (min-width:776px ){
+    #my-container{
+        width: 320px;
+        height: 568px !important;
+        margin: 0 auto;
+    }
+}
+
+/*//顶部*/
+#my-header{
+    height:10%;
+    background:#fff url(../images/head.jpg) no-repeat left top;
+    background-size: contain;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    width: 100%;
+}
+#my-body{
+    height:82%;
+}
+#page1{
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+#p1-notice .notice-contain {
+    width: 90%;
+    left: 5%;
+    top:10%;
+    background: none;
+}
+#p1-notice img{
+    width: 100%;
+}
+#page1-1{
+    background:#fff url(../images/p1-1.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#page1-2{
+    background:#fff url(../images/p1-2.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    background:#fff url(../images/p2.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+}
+#page2:before{
+    content: "";
+    display: table;
+}
+#page2 h4{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    color: #000;
+    width: 80%;
+    border-radius: 20px;
+    background: rgba(255,255,255,.8);
+    text-align: center;
+}
+#p2-notice img{
+    width: 80%;
+    margin: 20% 10%;
+}
+#loadImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(250,250,250,0);
+    display: none;
+ }
+#loadImg img{
+    position: absolute;
+    width: 80px;
+    height:80px;
+    left: 40%;
+    top: 40%;
+}
+#form-group{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+#get-message label{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    color: #333;
+}
+#get-message  span{
+    position: absolute;
+    text-align: right;
+    width: 60px;
+    line-height: 45px;
+    left: 0;
+    top: 0;
+}
+#get-message input{
+    color: #333;
+    display: block;
+    width: 100%;
+    height:100%;
+    padding-left: 65px;
+    border: none;
+}
+#get-message  select{
+    width: 100%;
+    height: 45px;
+    color: #333;
+
+}
+#get-message label, #get-message select{
+    margin-bottom: 10px;
+}
+/*第三个页面*/
+#page3{
+    background: #f00 url("../images/p3.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 100%;
+    padding-bottom: 30%;
+}
+#page3 .p3-ticket-box{
+    background:  url("../images/prize.png") no-repeat left top;
+    background-size: 100% 100%;
+    color:#d00;
+    position: relative;
+    padding: 0;
+}
+.left-info{
+    float: left;
+    padding-left: 4px;
+    width: 37%;
+    height: 80px;
+}
+.left-info h3{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+.left-info h3 span{
+    text-align: left;
+    display: block;
+    padding-left: 6px;
+}
+.left-info h3 b{
+    font-size:20px;
+    display: block;
+}
+[data-num="25"] .left-info h3 b{
+    font-size:14px;
+    text-align: left;
+}
+.right-title{
+    margin-left: 40%;
+    width: 60%;
+    height: 80px;
+    padding: 10px 10px 10px 0;
+    font-size: 12px;
+}
+ .col-xs-8 .right-title{
+     height: 154px;
+ }
+.col-xs-8 .left-info h3 b{
+    font-size: 30px;
+}
+.col-xs-8 .left-info h3 span{
+    font-size: 18px;
+    padding-left: 12px;
+}
+.col-xs-8 .right-title{
+    text-align: center;
+    padding-top: 59px;
+    font-size: 18px;
+}
+.live-area h3{
+    padding: 8px 10px;
+
+}
+.prize-name{
+    width: 25%;
+    line-height: 25px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+}
+.p3-ticket-box i{
+    display: none;
+}
+ .show-icon i{
+    position: absolute;
+     display: block;
+    background: url("../images/yes.png") no-repeat left top;
+    background-size: 100% 100%;
+    top: 0;
+    right: 0;
+     left: 0;
+     bottom: 0;
+}
+.p3-ticket-box .no-select-notice{
+    display: none;
+}
+.no-select .no-select-notice{
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+
+}
+.no-select h3{
+    font-size: 16px;
+}
+#p3-intro{
+    background: rgba(255,255,255,0.5);
+}
+#p3-intro img{
+    width: 70%;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+/*第4页*/
+#page4{
+    background: url("../images/p4.jpg") no-repeat center top;
+    background-size: cover;
+    min-height:100%;
+    padding-bottom:70px;
+}
+#page4 .ticket-box{
+    background: url("../images/lottery-ticket.png") no-repeat left top;
+    background-size: 100% 100%;
+    width: 300px;
+    min-height: 110px;
+    margin: 10px auto;
+    padding:10px;
+    color: #632104;
+    position: relative;
+}
+#page4 .ticket-box div:nth-child(1){
+    padding: 8px;
+    text-align: center;
+    font-size: 22px;
+    color: #d00;
+}
+#page4 .ticket-box div:nth-child(2){
+    text-align: center;
+    font-size: 10px;
+}
+
+.remove-ticket{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/close.png") no-repeat left top;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+.notice-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:rgba(0,0,0,0.6);
+    z-index: 1000;
+    display: none;
+}
+.notice-contain{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 30%;
+    height: 200px;
+    background: rgba(250,250,250,.8);
+    border-radius: 10px;
+    text-align: center;
+
+}
+#p4-notice h3{
+    margin: 20px 0;
+}
+#p4-notice p{
+   line-height: 60px;
+}
+/*page5*/
+#p5-notice{
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 80px auto;
+    padding: 10px;
+}
+#p5-notice h4{
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #ddd;
+}
+.appraise-detail{
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.appraise-detail span,.appraise-detail i{
+    vertical-align: 6px;
+}
+.appraise-detail p{
+    display:inline-block ;
+    width: 150px;
+    background:#ddd url("../images/star.png") no-repeat 0px top;
+    background-size: 200% 100%;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.appraise-detail p b{
+    float: left;
+    width: 20%;
+    height: 100%;
+
+}
+.appraise-detail  i{
+    display:inline-block ;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    font-style: normal;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+#p5-rule img{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+}
+
+    /*底部*/
+#my-footer{
+    /*position: absolute;*/
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background: #fff;
+}
+.footer-btn{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+
+}
+.footer-btn img{
+    width: 100%;
+}
+
+.arrow{
+    position: absolute;
+    z-index: 9999;
+    top:50%;
+
+}
+#arrow-right{
+    left: 10px;
+    animation: move1 1s  infinite ease;
+    -webkit-animation: move1 1s  infinite ease;
+    display: none;
+}
+#arrow-left{
+    right: 10px;
+    animation: move2 1s  infinite ease;
+    -webkit-animation: move2 1s  infinite ease;
+}
+@keyframes move1 {
+    0%{
+        left: 20px;
+        opacity: 0;
+    }
+
+    100%{
+        left: 10px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes move1 {
+    0%{
+        left: 20px;
+        opacity: 0;
+    }
+
+    100%{
+        left: 10px;
+        opacity: 1;
+    }
+}
+
+@keyframes move2 {
+    0%{
+        right: 20px;
+        opacity: 0;
+    }
+
+    100%{
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes move2 {
+    0%{
+        right: 20px;
+        opacity: 0;
+    }
+
+    100%{
+        right: 10px;
+        opacity: 1;
+    }
+}
